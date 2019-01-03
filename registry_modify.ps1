@@ -1,4 +1,4 @@
-S$registry_path_1 = "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management"
+$registry_path_1 = "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management"
 $registry_name_1 = "FeatureSettingsOverride"
 $registry_value_1 = "8"
 $registry_type_1 = "DWORD"

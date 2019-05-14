@@ -1,0 +1,1 @@
+Add-ADGroupMember -Identity app_mdm_readers -Members (Get-ADGroup -Filter {name -like "acn_ptg_a*"} | Get-ADGroupMember | Select-Object -Property SamAccountName)

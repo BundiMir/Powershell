@@ -1,0 +1,1 @@
+Invoke-Command -ComputerName test-sym-cz-1,test-sym-cz-2,test-sym-cz-3,test-sym-cz-4,t-symfire-cz-1,t-symfire-cz-2 -ScriptBlock {iisreset /start}

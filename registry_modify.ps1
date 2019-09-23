@@ -1,6 +1,6 @@
 $registry_path_1 = "HKLM:\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps"
 $registry_name_1 = "DumpFolder"
-$registry_value_1 = "E:\CrashDumps"
+$registry_value_1 = "E:\CrashDumps\WER_local"
 $registry_type_1 = "STRING"
 
 $registry_path_2 = "HKLM:\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps"
@@ -44,7 +44,7 @@ function Set-RegistryKeys {
     }
 }
 
-New-Item -Path e:\ -Name CrashDumps -Type Directory
+New-Item -Path e:\CrashDumps -Name WER_local -Type Directory
 
 Set-RegistryKeys $registry_path_1 $registry_name_1 $registry_value_1 $registry_type_1
 
